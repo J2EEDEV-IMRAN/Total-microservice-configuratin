@@ -9,5 +9,7 @@ import com.imran.uc.service.user.domain.User;
 public interface UserRepository extends JpaRepository<User, Long> {
 	
 boolean existsByPrimaryEmailEquals(String primaryEmail);
+
+User findByPrimaryEmailEquals(String primaryEmail);
 	
 }

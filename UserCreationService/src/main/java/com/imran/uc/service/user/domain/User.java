@@ -64,4 +64,12 @@ public class User {
 	@Column(name = "active")
 	private boolean active = true;
 
+	@Column(name = "accountNonExpired")
+    private boolean accountNonExpired;
+	
+    @Column(name = "credentialsNonExpired")
+    private boolean credentialsNonExpired;
+    
+    @Column(name = "accountNonLocked")
+    private boolean accountNonLocked;
 }

@@ -13,4 +13,10 @@ public interface IUserService {
     boolean isExistsUserByPrimaryEmail(String primaryEmail);
 
     void delete(long id);
+
+	boolean confirmRegistrationByEmail(String emailFromToken);
+
+	boolean generatePasswordResetEmail(String primaryEmail);
+
+	boolean passwordRestByEmail(String emailFromToken,String resetPassword);
 }
