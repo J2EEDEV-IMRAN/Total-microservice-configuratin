@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  user :
+#    image: creation:1
+    container_name: user_creation
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/user_creation
+    ports:
+      - "8686:8686"
+
+    env_file:
+      - gononet-uc-variables-dev.env
+#    command: mvn clean package -DskipTests=true

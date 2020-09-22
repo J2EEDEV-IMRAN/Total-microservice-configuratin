@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "spring.cloud.config.uri",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.cloud.config.uri'"
+  },
+  {
+    "name": "api.user-service.token.verify",
+    "type": "java.lang.String",
+    "description": "A description for 'api.user-service.token.verify'"
+  },
+  {
+    "name": "config.security.security-enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'config.security.security-enabled'"
+  },
+  {
+    "name": "security.cloud.config.uri",
+    "type": "java.lang.String",
+    "description": "A description for 'security.cloud.config.uri'"
+  },
+  {
+    "name": "security.profiles.active",
+    "type": "java.lang.String",
+    "description": "A description for 'security.profiles.active'"
+  },
+  {
+    "name": "security.application.name",
+    "type": "java.lang.String",
+    "description": "A description for 'security.application.name'"
+  },
+  {
+    "name": "spring.security.oauth2.client.client-registration-id.token-uri",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.security.oauth2.client.client-registration-id.token-uri'"
+  }
+]}

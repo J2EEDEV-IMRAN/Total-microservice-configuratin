@@ -1,0 +1,20 @@
+server:
+  port: 8151
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/J2EEDEV-IMRAN/service-config-store
+          search-paths:
+           - '*service'
+          #username: root
+          #passphrase: 12345
+         
+         
+         
+     
+#For Enableing poject as local config store    
+#spring:
+ #profiles:
+    #active: native

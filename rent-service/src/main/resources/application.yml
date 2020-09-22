@@ -1,0 +1,10 @@
+
+#api:
+  #user-service:
+    #token:
+      #verify: http://localhost:8061/oauth/check_token
+
+
+#config:
+ #security:
+    #securityEnabled: 1
