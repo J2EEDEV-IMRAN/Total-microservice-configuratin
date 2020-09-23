@@ -3,23 +3,21 @@ package com.imran.allmodel.model.customer;
 import lombok.Data;
 
 import javax.persistence.*;
+
+import com.imran.allmodel.model.auditable.Auditable;
+
 import java.util.List;
 
 
 /**
- * @author Krishantha Dinesh
- * krishantha@krishantha.com
- * www.krishantha.com
- * twitter @krishantha
- * on 14-October-2019 16:24
- * @Project rentcloudmodel
+ * @author Md Amran Hossain
  */
 
 
 @Entity
 @Table(name = "customer")
 @Data
-public class Customer {
+public class Customer extends Auditable<Integer>{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

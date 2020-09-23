@@ -3,27 +3,25 @@ package com.imran.allmodel.model.customer;
 import lombok.Data;
 
 import javax.persistence.*;
+
+import com.imran.allmodel.model.auditable.Auditable;
+
 import java.time.LocalDateTime;
 
 /**
- * @author Krishantha Dinesh
- * krishantha@krishantha.com
- * www.krishantha.com
- * twitter @krishantha
- * on 14-October-2019 16:41
- * @Project rentcloudmodel
+ * @author Md Amran Hossain
  */
 
 @Entity
 @Table(name = "loyalityPoint")
 @Data
-public class Loyality {
+public class Loyality extends Auditable<Integer> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int transactionId;
+    private int transactionId;
     @ManyToOne
     @JoinColumn
-    Customer customer;
-    int point;
-    LocalDateTime expireDate;
+    private Customer customer;
+    private int point;
+    private LocalDateTime expireDate;
 }

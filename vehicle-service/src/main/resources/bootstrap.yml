@@ -8,6 +8,9 @@ spring:
     - dev
   application:
     name: vehicleserver 
+  jpa:
+    hibernate:
+      ddl-auto: update
       
 eureka:
   client:
@@ -16,3 +19,6 @@ eureka:
   instance:
     instance-id: ${spring.application.name}-${random.int}
     hostname: localhost
+    
+    
+   

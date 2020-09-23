@@ -3,28 +3,26 @@ package com.imran.allmodel.model.rent;
 import lombok.Data;
 
 import javax.persistence.*;
+
+import com.imran.allmodel.model.auditable.Auditable;
+
 import java.time.LocalDateTime;
 
 /**
- * @author Krishantha Dinesh
- * krishantha@krishantha.com
- * www.krishantha.com
- * twitter @krishantha
- * on 15-October-2019 04:00
- * @Project rentcloudmodel
+ * @author Md Amran Hossain
  */
 @Entity
 @Table(name = "rent")
 @Data
-public class Rent {
+public class Rent extends Auditable<Integer> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int rentId;
-    int customerId;
-    int vehicleId;
-    LocalDateTime rentFrom;
-    LocalDateTime rentTill;
-    int currentOdometer;
-    String returnLocation;
+    private int rentId;
+    private int customerId;
+    private int vehicleId;
+    private LocalDateTime rentFrom;
+    private LocalDateTime rentTill;
+    private int currentOdometer;
+    private String returnLocation;
 
 }

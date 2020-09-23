@@ -1,4 +1,10 @@
 com/imran/allmodel/model/customer/Loyality.class
-com/imran/allmodel/model/customer/Customer.class
+com/imran/allmodel/model/auditable/QAuditable.class
 com/imran/allmodel/model/vehicle/Vehicle.class
 com/imran/allmodel/model/rent/Rent.class
+com/imran/allmodel/model/vehicle/QVehicle.class
+com/imran/allmodel/model/rent/QRent.class
+com/imran/allmodel/model/customer/Customer.class
+com/imran/allmodel/model/customer/QLoyality.class
+com/imran/allmodel/model/customer/QCustomer.class
+com/imran/allmodel/model/auditable/Auditable.class

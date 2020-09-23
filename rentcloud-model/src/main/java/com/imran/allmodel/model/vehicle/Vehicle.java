@@ -3,32 +3,31 @@ package com.imran.allmodel.model.vehicle;
 import lombok.Data;
 
 import javax.persistence.*;
+
+import com.imran.allmodel.model.auditable.Auditable;
+
 import java.util.List;
 
 /**
- * @author Krishantha Dinesh
- * krishantha@krishantha.com
- * www.krishantha.com
- * twitter @krishantha
- * on 14-October-2019 16:32
- * @Project rentcloudmodel
+ * @author Md Amran Hossain
  */
 
 @Entity
 @Table(name="vehicle")
 @Data
-public class Vehicle {
+public class Vehicle extends Auditable<Integer>{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    private Integer id;
 
-    String make;
-    String model;
-    String type;
-    int year;
-    int odometerValueOnRegister;
-    String color;
+    private String make;
+    private String model;
+    private String type;
+    private Integer year;
+    private Integer odometerValueOnRegister;
+    private String color;
+    private boolean isActive;
 
 
 }
