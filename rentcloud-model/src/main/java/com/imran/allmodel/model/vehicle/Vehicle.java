@@ -1,12 +1,13 @@
 package com.imran.allmodel.model.vehicle;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 import com.imran.allmodel.model.auditable.Auditable;
 
-import java.util.List;
 
 /**
  * @author Md Amran Hossain
@@ -15,6 +16,8 @@ import java.util.List;
 @Entity
 @Table(name="vehicle")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Vehicle extends Auditable<Integer>{
 
     @Id
@@ -28,6 +31,7 @@ public class Vehicle extends Auditable<Integer>{
     private Integer odometerValueOnRegister;
     private String color;
     private boolean isActive;
+
 
 
 }

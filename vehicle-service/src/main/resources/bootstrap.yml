@@ -1,16 +1,16 @@
 
-spring:
-  cloud:
-    config:
-      uri: http://localhost:8151    
-  profiles:
-    active:
-    - dev
-  application:
-    name: vehicleserver 
-  jpa:
-    hibernate:
-      ddl-auto: update
+#spring:
+  #cloud:
+    #config:
+      #uri: http://localhost:8151    
+  #profiles:
+    #active:
+    #- dev
+  #application:
+    #name: vehicleserver 
+  #jpa:
+    #hibernate:
+      #ddl-auto: update
       
 eureka:
   client:
